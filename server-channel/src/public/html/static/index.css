@@ -1,0 +1,345 @@
+body {
+    counter-reset: number;
+    font-family: Arial, sans-serif;
+
+}
+
+.hero-section {
+    background:  linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ), url('Gemini_Generated_Geese_over_Sea24.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    padding-bottom: 5%;
+
+    @media screen and (min-width: 768px){
+      height: 85vh;
+      background-position: center;
+
+    };
+}
+
+.course-section {
+    background:  linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ), url('Gemini_Generated_Geese_over_Sea24.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    height: 70vh;
+    padding-bottom: 5%;
+
+    @media screen and (min-width: 768px){
+      background:  linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ), url('Gemini_Generated_Geese_over_Sea24.jpeg');
+      height: 85vh;
+      background-position: center;
+
+    };
+}
+
+.login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background:  linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ), url("background.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+.course-card .card-text{
+  font-size: 1em;
+}
+
+
+.service-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+    margin-top:20px;
+}
+
+.course-plan{
+  background:  linear-gradient(
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.3)
+  ), url('Gemini_Generated_Image_MoonLanding_Chandrayan.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position:left;
+  margin-bottom: 5em;
+    color: #fff;
+    @media screen and (min-width: 768px){
+      background:  linear-gradient(
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.3)
+      ), url('Gemini_Generated_Image_MoonLanding_Chandrayan_vertical.jpeg');
+      background-position: left;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+
+
+    };
+}
+
+.course-plan .col-md-3{
+  align-content: top;
+  margin-top:10px;
+  margin-botton:10px;
+
+  @media screen and (min-width: 768px){
+    margin-bottom:5px;
+      };
+}
+
+@media screen and (max-width: 600px){
+  .card-title{
+  }
+  .card-text{
+    padding-bottom: 0px;
+  }
+    };
+
+
+.course-card {
+    background-color: #f7f7f7;
+    padding: 0px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    margin-top:5px;
+    width: auto;
+    height:auto;
+}
+
+.toc_position{
+    counter-increment: number;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 4px;
+    margin-right: 5px;
+    float:left;
+    background: #000;
+    border: 2px solid #666;
+    color: #fff;
+    text-align: center;
+
+}
+
+.toc_position::before{
+  content: counter(number)" ";
+}
+
+.about-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    margin-bottom: 20px;
+    margin-top:20px;
+    width: fit-content;
+    display: inline-block;
+    position: relative;
+
+}
+
+.about-card img{
+
+  display: block;
+  width: 20em;
+  margin: auto;
+}
+
+.portfolio-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.blog-card {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.contact-section {
+    background-color: #f7f7f7;
+    padding: 20px;
+}
+
+.backdrop{
+  background-color: #f7f7f7;
+  padding: 20px;
+}
+
+.footer-section {
+    background-color: #fff;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+}
+
+.img-small{
+  max-width: 20em;
+  align-self: center;
+  height:auto;
+  }
+
+.profile-card{
+  align-content: center;
+}
+
+html{
+
+
+  scroll-snap-type: y mandatory;
+  /* scroll-padding-top: 90vh; */
+  scroll-padding-bottom: 100px;
+  scroll-behavior: smooth;
+}
+
+section{
+
+scroll-snap-align: start;
+scroll-snap-stop: always;
+
+}
+
+.scrolltotop {
+
+    position:fixed;
+      top:80vh;
+     right:20px;
+    z-index:99;
+
+        @media screen and (min-width: 768px){
+        top:90vh;
+        right: 20px;
+
+        };
+}
+
+#navbar{
+  position: sticky;
+  top:0px;
+  z-index:98;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+
+.scrolltotop:hover{
+  background: green;
+}
+
+.headspan{
+  color:#B8860B;
+  font-size: 2em;
+}
+.headspan-white{
+  color:white;
+  font-size: 2em;
+}
+blockquote{
+   font-family: Georgia, "Times New Roman", Times, serif;
+   padding-bottom: 40px;
+   padding-top: 40px;
+}
+blockquote::before{
+  content: '“';
+  float: left;
+  height: 120px;
+  margin-top: -70px;
+  font-size: 500%;
+  color:#B8860B;
+}
+
+blockquote:after{
+  content:'”';
+  float: right;
+  height: 25px;
+   margin-top: -100px;
+   margin-right:30px;
+    padding-top: 45px;
+    font-size: 500%;
+    color:#B8860B;
+}
+
+.bqstart {
+  float: left;
+  height: 120px;
+  margin-top: -70px;
+  font-size: 500%;
+  color:#B8860B;
+
+ }
+
+ .bqend {
+   float: right;
+   height: 25px;
+    margin-top: -100px;
+    margin-right:30px;
+     padding-top: 45px;
+     font-size: 500%;
+     color:#B8860B;
+
+
+ }
+
+.spanhighlight{
+  font-weight: bold;
+  color:#B8860B;
+  font-style: italic;
+  font-size:110%;
+
+}
+
+.widther {
+
+        /* border-radius:10px; */
+        background: #f0dcdb;
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 100%; /* Default for extra small (mobile) */
+    }
+
+    /* Medium devices (tablets, 768px and up) */
+    @media (min-width: 768px) {
+        .widther {
+            width: 75%;
+        }
+    }
+
+.hidden_class{
+ visibility: hidden;
+}
+
+.priceList li::before{
+  content: "\2705";
+  float: left;
+  /* height: 120px; */
+  /* margin-top: -70px; */
+  /* font-size: 500%; */
+  /* color:#B8860B; */
+
+}
