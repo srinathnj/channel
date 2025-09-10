@@ -24,19 +24,106 @@ class Home_Page extends Component {
   render(){
 
     return(
-    <div className="main">
-   <div>
-      <p>I'm a simple home page</p>   
-   </div>
-   <Menubar/>
-   <p>
-     If you're looking for random paragraphs, you've come to the right place. When a random word or a random sentence isn't quite enough, the next logical step is to find a random paragraph. We created the Random Paragraph Generator with you in mind. The process is quite simple. Choose the number of random paragraphs you'd like to see and click the button. Your chosen number of paragraphs will instantly appear.
+      <div className="main">
+      <Menubar/>
+      <div className="container border">
+     <div class="container py-1">
+    <h3 class="fw-bold text-center mb-2">Follow the 4 Simple steps to fix your device</h3>
+    
+    <div class="row g-1 g-sm-4 justify-content-center align-items-stretch">
+        <div class="col-6 col-sm-6 col-lg-3">
+            <div class="card shadow-sm border-primary step-card text-center h-100">
+                <div class="card-body">
+                    <p class="service-steps mb-0">
+                        <span class="service-number text-primary fw-bold">1</span> Choose a Mobile or Laptop
+                    </p>
+                </div>
+            </div>
+        </div>
 
-While it may not be obvious to everyone, there are a number of reasons creating random paragraphs can be useful. A few examples of how some people use this generator are listed in the following paragraphs.
-Creative Writing
+        <div class="col-6 col-sm-6 col-lg-3">
+            <div class="card shadow-sm border-success step-card text-center h-100">
+                <div class="card-body">
+                    <p class="service-steps mb-0">
+                        <span class="service-number text-success fw-bold">2</span> Let us know how we can reach you
+                    </p>
+                </div>
+            </div>
+        </div>
 
-Generating random paragraphs can be an excellent way for writers to get their creative flow going at the beginning of the day. The writer has no idea what topic the random paragraph will be about when it appears. This forces the writer to use creativity to complete one of three common writing challenges. The writer can use the paragraph as the first one of a short story and build upon it. A second option is to use the random paragraph somewhere in a short story they create. The third option is to have the random paragraph be the ending paragraph in a short story. No matter which of these challenges is undertaken, the writer is forced to use creativity to incorporate the paragraph into their writing. 
-   </p>
+        <div class="col-6 col-sm-6 col-lg-3">
+            <div class="card shadow-sm border-info step-card text-center h-100">
+                <div class="card-body">
+                    <p class="service-steps mb-0">
+                        <span class="service-number text-info fw-bold">3</span> Write or Voice Message your issue
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-lg-3">
+            <div class="card shadow-sm border-warning step-card text-center h-100">
+                <div class="card-body">
+                    <p class="service-steps mb-0">
+                        <span class="service-number text-warning fw-bold">4</span> Select a drop-in Center or Request for a pick up
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+      <div class="row mt-sm-5">
+        <div class="col-12 text-center">
+            <p class="fs-4 d-none d-sm-inline text-success fw-bold">
+                That's it! We will get in touch with you to make your device work like brand new again!!
+            </p>
+            <p class="fs-5 d-none d-sm-inline text-secondary">
+                Sit back, relax, watch through the live updates of the repair! Any questions, we are just a message away!
+            </p>
+             <p class="fs-5  d-sm-none text-success fw-bold">
+                That's it! We will get in touch with you to make your device work like brand new again!!
+            </p>
+            <p class="fs-8  d-sm-none text-secondary">
+                Sit back, relax, watch through the live updates of the repair! Any questions, we are just a message away!
+            </p>
+        </div>
+    </div>
+
+      </div>
+
+
+     <div class="row g-1 g-sm-4 mt-sm-5 mx-2 justify-content-center align-items-stretch">
+        <div class="col-6 col-sm-6 col-lg-3">
+          <div class="ratio ratio-1x1">
+            <div class="card shadow-sm border-primary device-card text-center">
+                <div class="card-body">
+                    <p class="service-steps mb-0">
+                        Laptop
+                    </p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-6 col-sm-6 col-lg-3">
+            <div class="card shadow-sm border-primary device-card text-center">
+                <div class="card-body">
+                    <p class="service-steps mb-0">
+                        Mobile
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+     </div>
+
+
+
+     
+   
+
+
+
    </div>
 
 

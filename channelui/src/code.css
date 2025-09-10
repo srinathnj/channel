@@ -20,6 +20,29 @@
 }
 
 .main{
-    margin-top: 10px;
-    margin-bottom: 25px;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    /* overflow-y: scroll; */
 }
+
+.max-h-100{
+    max-height: 100px;
+    overflow: hidden;
+}
+
+  .step-card {
+            /* min-height: 150px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .service-number {
+            font-size: 1.5rem;
+        }
+
+.device-card {
+            /* min-height: 100px; */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
