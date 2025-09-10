@@ -1,0 +1,25 @@
+.hover-btn-green:hover {
+  background-color: #28a745; /* This is the green color from Bootstrap's 'success' theme */
+  border-color: #28a745;
+  color: #fff;
+}
+
+.bg-red-800{
+   background-color: rgb(153,27,27,1);
+   color:#fff;
+}
+
+.line-ht-1 {
+  /* Change this to a smaller pixel value or a unitless value */
+  line-height: 1;
+}
+
+.blureffect{
+    background-color:  rgb(125, 174, 243,.3);
+    backdrop-filter: blur(10px);
+}
+
+.main{
+    margin-top: 10px;
+    margin-bottom: 25px;
+}

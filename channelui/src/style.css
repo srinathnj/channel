@@ -1,0 +1,1695 @@
+#maincontent{
+  /* position: absolute; */
+  top:20px;
+  width: 100%;
+  height: 100vh;;
+}
+/* starting CSs for navbar */
+
+.mend1, .mend2, .mend3 {
+  width: 1em;
+  height: .5px;
+  background-color:#f2f2f2;
+
+  /* color: #f2f2f2; */
+  margin: 6px 0;
+}
+
+/* Rotate first bar */
+.change .mend1 {
+  transform: translate(0, .2em) rotate(-45deg);
+  height: 2px;
+}
+
+/* Fade out the second bar */
+.change .mend2 {opacity: 0;}
+
+/* Rotate last bar */
+.change .mend3 {
+  transform: translate(0, -.6em) rotate(45deg);
+  height: 2px;
+}
+
+#navbars{
+top:0px;
+/* height: 100%; */
+position: sticky;
+z-index:200;
+
+}
+
+/* @media screen only and (max-width:600px)
+{ */
+
+
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  /* filter: alpha(opacity=50); */
+  /* position: sticky; */
+  /* top: 0px; */
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 0px 8px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.topnav .navbar-item{
+/* padding: 0px 15px; */
+margin:0px 5px 0px 5px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+
+}
+
+@media screen and (max-width: 600px) {
+  /* .topnav a:not(:first-child) */
+  .topnav a
+  {
+   display: none;
+   margin-left:0;
+   /* height:0; */
+   /* z-index:200; */
+   /* height: auto; */
+   /* float:left; */
+   /* max-height: 0; */
+   /* overflow: hidden; */
+   /* z-index: 200; */
+  }
+
+
+  #navCarpet{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  display: none;
+  alignItems: center;
+  justifyContent: center;
+  border: 1px solid #dddddd;
+  z-index:180;
+  }
+
+  .topnav a.icon {
+    /* float: right; */
+    display: block;
+    width: 10px;
+    }
+  .topnav .navbar-item{
+    max-width: 7em;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive
+  {position: absolute;
+  background-color:rgba(24, 3, 3, 0.86);
+  opacity: 1;
+  z-index: 195;
+  border-radius: 5px;
+  /* margin-left:2px; */
+  margin-right: 3px;
+  width: 100vw;
+  transition: all 1s linear;
+
+  /* background-color: transparent; */
+}
+  /* .topnav.responsive .icon { */
+    /* position:absolute; */
+      /* float:right; */
+    /* right: 5px; */
+    /* top:10px; */
+    /* height: 20px; */
+    /* width:20px; */
+
+  /* } */
+  .topnav .icon:after{
+    content: '\2630';
+    /* height: 0px; */
+    /* width:20px; */
+  }
+  .topnav.responsive a {
+    /* position:absolute; */
+    float: none;
+    margin-left: 10px;
+    display: block;
+    /* max-height: 100%; */
+    text-align: left;
+    /* transition: left 15s; */
+    transition: all 1s linear;
+    }
+    .topnav.responsive a{
+        max-width: 5em;
+    }
+  .topnav.responsive .icon:after{
+    content:'\0058';
+    /* max-width: 10px; */
+
+    /* float: none; */
+    /* display: block; */
+    /* max-height: 100%; */
+    /* text-align: left; */
+    /* transition: top 15s; */
+    /* width:20px; */
+  }
+
+  .homenu{
+    /* display: flex; */
+    /* width: 100%; */
+  }
+}
+
+  .loginbutton
+  {
+    max-width: 6em;
+    max-height: 1.5em;
+  }
+
+/* Ending css for the navbar */
+/*starting CSS for Search Bar */
+
+.logo-head h2,.dashboard__nav h2 {
+            color: #2f8d46;
+            text-align: center;
+            margin: 0px;
+            /* font-family: "Arial"; */
+
+        }
+
+.timezone__wrapper p{
+  margin-top:0;
+  margin-bottom: 0;
+}
+
+.logo-head h3,.dashboard__main h3 {
+            color: black;
+            text-align: center;
+            /* font-family: "Arial"; */
+            margin: 0px;
+        }
+
+        #search-bar {
+
+            /* Set the display as block which will
+            take whole width of the page */
+            display: block;
+
+            /* Set the margin-left and margin-right
+            to 'auto' so that search bar will be at
+           the center */
+            margin-left: auto;
+            margin-right: auto;
+
+            /* Set the search bar to have the width
+            to '550px' and height to '40px' similar
+            to Google Search Bar */
+
+            width: min(550px,85%);
+
+            /* Set the border-radius to '50px' which
+            makes the corners of search bar as round */
+            border-radius: 10px;
+            height: 50px;
+            font-size: 15px;
+            rows:1;
+            columns: 10;
+
+
+            /* Set the border to a solid color */
+            border: 1px solid #dddddd;
+
+            /* Disable the outline */
+            outline: none;
+
+            /* Set the padding-left to '40px' that
+            will make the cursor to start the 40px
+            from the left  */
+
+
+        }
+
+     /* #search-bar{
+        width: 100%;
+        height: 2em;
+        background: transparent;
+        border: 1px solid black;
+        outline: none;
+        font-size: 1em;
+        padding: 0 35px 0 5px;
+        margin-top: 2em;
+        margin-bottom: 1em;
+        color: #fff;
+      } */
+
+
+        #search-bar:hover {
+
+            /* Styling for search bar when we hover on
+              it to show the shadow of the search bar
+            The attributes for box-shadow are:
+            offset-x | offset-y | blur-radius | color */
+            box-shadow: 0px 1px 3px rgb(192, 185, 185);
+
+            /* You can play with these values to
+            get your desired shadow effect */
+        }
+
+        .buttons {
+
+            /* Styling the buttons of the page*/
+            padding: 10px 20px 10px 20px;
+            border-radius: 4px;
+            border: solid;
+            margin-top: 20px;
+            cursor: pointer;
+            text-align: center;
+            padding: auto;
+            margin-bottom: 10px;
+            /* color: teal; */
+
+
+        }
+
+        .container {
+
+            /* Center the button on the page */
+            text-align: center;
+        }
+/*Ending CSS for Search Bar*/
+/*Starting CSS for Modalbox*/
+
+.Modalbox{
+  z-index: 200;
+}
+
+#ImageModal{
+  margin-top: 20px;
+}
+
+#popup-window {
+  /* background: #f36e65; */
+  /* background: rgb(49,180,63,0.8); */
+  background: rgba(85, 85, 85, 1);
+  font:inherit;
+  /* background: blur; */
+  color: #fff;
+  font-size: auto;
+  /* position: fixed; */
+  width: min(550px,100%);
+  min-width:fit-content ;
+  height: 70%;
+  text-align: left;
+  /* 200px; */
+  border: 1px solid black;
+  padding: 10px;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 9;
+  border-radius: 10px;
+  /* position: relative; */
+  /* display: none;  */
+}
+
+/* #popup-window label{
+  margin-left: 30px;
+}
+#popup-window select{
+  margin-left: 20px;
+  max-width: 10vw;
+} */
+/*
+@media only screen and (max-width: 600px) {
+
+  #popup-window label{
+    margin-left: 30px;
+
+  }
+  #popup-window select{
+    margin-left: 30px;
+    margin-right:30px;
+    max-width: 20vw;
+  }
+
+} */
+
+/* @media only screen and (max-width: 600px){ */
+  #popup-window label {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  text-align: right;
+  width: 90%;
+  line-height: 26px;
+  margin-bottom: 10px;
+
+
+    /* width:180px;
+    clear:left;
+    text-align:right;
+    padding-right:10px; */
+
+
+
+
+}
+
+#popup-window  select {
+  /* height: 20px; */
+  flex: 0 0 60%;
+  margin-left: 10px;
+  /* float:left; */
+}
+/* } */
+
+.topic-div{
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-column-gap: 0px;
+}
+
+#querybox input {
+    width: 80%;
+    height: 2em;
+    margin-left: 50px;
+    border-radius: 5px;
+
+    /* margin-left: 10px; */
+    /* background: transparent; */
+    border: 1px solid black;
+    outline: none;
+    font-size: 1em;
+    /* padding: 0 35px 0 5px; */
+    /* margin: auto; */
+    /* margin-top: 2em; */
+    /* margin-bottom: 1em; */
+    color: #000;
+}
+.checkboxes{
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+
+#close-button{
+  margin: Auto;
+}
+
+.ckbox{
+margin-left:5px;
+margin-right:15px;
+display:flex;
+float:left;
+grid-gap: 20px;
+grid-column-gap:5px;
+}
+.ckbox div{
+  /* padding: 5px; */
+}
+
+/*Ending CSS for Modal Box */
+/*Starting CSS for Image Upload*/
+
+.image-p
+{
+  background: #eee;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  list-style-type: none;
+  border: 1px solid black;
+  color: #000;
+}
+#imageform{
+  margin-top: 30px;
+}
+
+form img {
+  height: 64px;
+  order: 1;
+}
+
+form p {
+  line-height: 32px;
+  /* padding-left: 10px; */
+}
+
+button {
+  background-color: #7f9ccb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px ridge black;
+  font-size: 0.8rem;
+  height: auto;
+}
+
+form button {
+  background-color: #7f9ccb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px ridge black;
+  font-size: 0.8rem;
+  height: auto;
+}
+
+form label {
+  background-color: #7f9ccb;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px ridge black;
+  font-size: 0.8rem;
+  height: auto;
+}
+
+form label:hover,
+form button:hover {
+  background-color: #2d5ba3;
+  color: white;
+}
+
+form label:active,
+form button:active {
+  background-color: #0d3f8f;
+  color: white;
+}
+/* fde073 */
+/*Ending CSS for Image Upload*/
+
+/*pop from top notification - starts*/
+#note, #notif {
+  position: absolute;
+  z-index: 1001;
+  /* top: 40px; */
+  top: 50vh;
+  left: 0;
+  right: 0;
+  background:#fde073;
+  /* #fde073; */
+
+  text-align: center;
+  line-height: 2.5;
+  overflow: hidden;
+  -webkit-box-shadow: 0 0 5px black;
+  -moz-box-shadow:    0 0 5px black;
+  box-shadow:         0 0 5px black;
+  animation-name: animation_m;
+  animation-duration: 10s;
+  timing-function:linear;
+  animation-direction: normal;
+   animation-fill-mode: forwards;
+}
+#note, #notif {
+    display: none;
+}
+#close{
+  cursor: pointer;
+}
+
+@-webkit-keyframes slideDown {
+    0%, 100% { -webkit-transform: translateY(-50px); }
+    10%, 90% { -webkit-transform: translateY(0px); }
+}
+@-moz-keyframes slideDown {
+    0%, 100% { -moz-transform: translateY(-50px); }
+    10%, 90% { -moz-transform: translateY(0px); }
+}
+
+.cssanimations.csstransforms #note{
+    -webkit-transform: translateY(-50px);
+    -webkit-animation: slideDown 2.5s 1.0s 1 ease forwards;
+    -moz-transform:    translateY(-50px);
+    -moz-animation:    slideDown 2.5s 1.0s 1 ease forwards;
+}
+
+
+.cssanimations.csstransforms #notif {
+    -webkit-transform: translateY(-50px);
+    -webkit-animation: slideDown 2.5s 1.0s 1 ease forwards;
+    -moz-transform:    translateY(-50px);
+    -moz-animation:    slideDown 2.5s 1.0s 1 ease forwards;
+}
+
+.cssanimations.csstransforms #close {
+  display: none;
+}
+
+@keyframes animation_m {
+  0%, 100% { -webkit-transform: translateY(-200px); }
+  10%, 80% { -webkit-transform: translateY(0px); }
+  80%, 99% { -webkit-transform: translateY(0px); }
+}
+
+/*pop from top notification - ends*/
+/*pop from top notification - starts*/
+#n-alert {
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    left: 0;
+    right: 0;
+    background:red;
+    /* #fde073; */
+
+    text-align: center;
+    line-height: 2.5;
+    overflow: hidden;
+    -webkit-box-shadow: 0 0 5px black;
+    -moz-box-shadow:    0 0 5px black;
+    box-shadow:         0 0 5px black;
+    animation-name: animation_m;
+    animation-duration: 10s;
+    timing-function:linear;
+    animation-direction: normal;
+     animation-fill-mode: forwards;
+
+}
+#n-alert {
+    display: none;
+}
+#c-alert{
+  cursor: pointer;
+}
+
+@-webkit-keyframes slideDown {
+    0%, 100% { -webkit-transform: translateY(-50px); }
+    10%, 90% { -webkit-transform: translateY(0px); }
+}
+@-moz-keyframes slideDown {
+    0%, 100% { -moz-transform: translateY(-50px); }
+    10%, 90% { -moz-transform: translateY(0px); }
+}
+
+.cssanimations.csstransforms #n-alert {
+    -webkit-transform: translateY(-50px);
+    -webkit-animation: slideDown 2.5s 1.0s 1 ease forwards;
+    -moz-transform:    translateY(-50px);
+    -moz-animation:    slideDown 2.5s 1.0s 1 ease forwards;
+}
+
+.cssanimations.csstransforms #notif {
+    -webkit-transform: translateY(-50px);
+    -webkit-animation: slideDown 2.5s 1.0s 1 ease forwards;
+    -moz-transform:    translateY(-50px);
+    -moz-animation:    slideDown 2.5s 1.0s 1 ease forwards;
+}
+.cssanimations.csstransforms #c-alert {
+  display: none;
+}
+
+/*pop from top notification - ends*/
+
+
+
+
+
+
+
+/*Starting CSS for chatbox */
+
+.chat-box{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  /* display: none; */
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  width: 70%;
+  /* max-height: 800px; */
+  max-height: 100%;
+  /* display: flex; */
+  /* align-items: flex-end; */
+  @media only screen and (max-width: 600px) {
+    width:98%;
+    /* max-height: 800px; */
+    max-height: 98%;
+  }
+  }
+
+.chat-container {
+  margin-left: auto;
+  margin-right:auto;
+  /* width: inherit; */
+  /* height: 500px; */
+  height: 90vh;
+  /* max-height: 80%; */
+}
+
+
+  .chatbox {
+  height: min(1000px,98%);
+  list-style: none;
+  display: flex;
+  flex-flow: column;
+  background: #eee;
+  border-radius: 6px;
+  box-shadow: 1px 0px 10px #eee;
+}
+
+#messagelist {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+#messagelist .private {
+  background: #015e4b;
+  color: #fff;
+  margin-left: auto;
+}
+
+#messagelist li {
+  list-style: none;
+  background: white;
+  max-width: 400px;
+  /* padding: 10px; */
+  margin: 10px;
+}
+
+#messagelist p:first-child {
+  color: #53bdea;
+}
+
+#messagelist .private p:first-child {
+  color: #03c493;
+}
+
+#chatinput{
+  bottom:0;
+  position: sticky;
+}
+
+.notification:after {
+  /* content: "\2212"; */
+  content: "\2731";
+  color: green;
+  font-size: 1em;
+  font-weight: bolder;
+  /* position:absolute; */
+  /* top:0; */
+  /* right:; */
+  /* position:fixed; */
+  left:0;
+}
+
+#attachment{
+  /* float: right; */
+  background: orange;
+  margin-top:30px;
+  margin-right:50px;
+  max-width: 200px;
+
+    /* width: 90%; */
+    /* margin-left: 50px; */
+    position: sticky;
+    top: 10px;
+    z-index:45;
+    @media only screen and (max-width: 600px) {
+      top: 45px;
+      max-width: 100px;
+
+  };
+
+    /* height: 98vh */
+
+}
+
+
+
+
+
+
+.ques_head{
+ top:0;
+ /* background: blue; */
+ /* padding-bottom: 20px; */
+ width: inherit;
+ /* backface-visibility: hidden */
+ backdrop-filter: blur(5px);
+ transition: 5ms;
+ /* margin: auto 10% auto 10%; */
+ left:0;
+ padding-right: 20px;
+ @media only screen and (min-width: 600px) {
+   width:100%;
+   align-content: center;
+   /* position: sticky; */
+   align-self: left;
+   opacity: 100%;
+   /* width: 100%; */
+
+   /* max-height: 800px; */
+   /* max-height: 100%; */
+ }
+ }
+ .ques_head img{
+   max-width: 100%;
+   max-height: 100%;
+   width: auto;
+   height: auto;
+   clip-path: inset(0px 0px 25% 0 round 5px);
+
+   @media only screen and (min-width: 600px){
+     /* position: absolute; */
+    /* top: 0; */
+    /* width: auto; */
+    /* height: 100%; */
+    /* object-fit: cover; */
+    /* object-position: 55%; */
+    /* transform: scale(0.5) translate(0, 5%); */
+    height: 100%;
+   clip-path: inset(0px 0px 20% 0 round 10px);
+   }
+ }
+
+form.Input {
+  display: flex;
+}
+
+form.Input input {
+  flex: 10;
+  padding: 14px 10px;
+  border: none;
+}
+
+form.Input button {
+  padding: 4px;
+  background: teal;
+  border: none;
+  flex: 1;
+  color: white;
+  cursor: pointer;
+}
+
+#users {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100px;
+  overflow-y: scroll;
+  flex-flow: row;
+  padding-top: 20px;
+}
+
+#users li {
+  min-width: 100px;
+  max-height: 20px;
+  border-radius: 10px;
+  background: white;
+  text-align: center;
+  box-shadow: 0px 2px 10px #eee;
+}
+/*Ending CSS for chatbox */
+
+/*Starting CSS for TransporterView*/
+.vehicleContainer,.studentContainer,.tripContainer{
+  width: 90%;
+  float:right;
+}
+
+#MapCase{
+  position: sticky;
+  top:50px;
+  /* padding-top:20px */
+  /* width:50vw; */
+}
+
+#map{
+  width: 95%;
+  /* width: 200px; */
+  height: 200px;
+  margin: 0 auto 0 auto;
+
+  @media only screen and (min-width: 600px){
+    height: 300px;
+    width: 100%;
+    /* align-content: center; */
+    margin: 0 auto 0 auto;
+    /* margin-left: 100px; */
+  }
+}
+
+#map img{
+  max-width: none;
+}
+.tag_icon_pedestrian{
+  height: 10;
+}
+
+.mt{
+  font-family: 'Lato', sans-serif;
+  /* position: relative; */
+  /* margin-top: -100px; */
+  z-index: 22;
+  font-weight:300;
+  height:3em;
+  background-color:#ffcc00;
+  line-height:3em;
+  padding-left:2em;
+}
+.mapbox{
+  margin-left: 100px;
+  max-height: 200px;
+  max-width: 200px;
+  overflow:hidden;
+  scroll-behavior: auto;
+  /* scrollWheelZoom:auto; */
+}
+.stopcard{
+  display: grid;
+  grid-template-areas: "stopname stopname"
+                       "parrival pdeparture"
+                        "stopblock stopblock"
+                        "stopbuttonbox stopbuttonbox";
+ border:3px solid green;
+ border-radius: .5em;
+ background-color: hsl(45,100%,50%,30%);
+ /* z-index: 300; */
+ /* pointer-events: auto; */
+
+
+}
+.stopcard:nth-child(1n){
+  /* pointer-events: none; */
+}
+
+.stopname{
+  grid-area:stopname;
+  font-size: 24px;
+  font-weight: bold;
+}
+.predDeparture{
+  grid-area:pdeparture;
+  font-size: 24px;
+  font-weight: bold;
+}
+.predArrival{
+  grid-area:parrival;
+  /* font-size: 24px; */
+  /* font-weight: bold; */
+}
+.stopblock{
+  grid-area:stopblock;
+  /* font-size: 24px; */
+  /* font-weight: bold; */
+}
+.stopbuttonbox{
+  grid-are:stopbuttonbox;
+}
+
+
+
+
+.tripBlock{
+  display: grid;
+  grid-row-gap: 10px;
+  width: min(500px,95%);
+  grid-template-areas:"triphead triphead"
+                "tripplan tripactual"
+                "managetrip managetrip";
+  margin: auto;
+}
+.tripHead{
+  grid-area:triphead;
+}
+.tripDate{
+  font-weight: bold;
+}
+.tripPlan{
+  grid-area:tripplan;
+  display: grid;
+  grid-row-gap:5px;
+}
+.tripActual{
+  grid-area:tripactual;
+  display: grid;
+  grid-row-gap:5px;
+}
+.manageTrip{
+  grid-area:managetrip;
+  margin-bottom:10px;
+}
+
+
+.cards{
+  display: grid;
+  grid-row-gap: 10px;
+  width: min(500px,95%);
+  margin: auto;
+}
+.card{
+  display: grid;
+  grid-template-areas: "tpname tpname"
+                       "tpaddress tpaddress"
+                       "tpaddress tpaddress"
+                        "tpcontact tpemail";
+ border:3px solid green;
+ border-radius: .5em;
+ background-color: hsl(45,100%,50%,30%);
+
+
+}
+
+.tpname{
+  grid-area:tpname;
+  font-size: 24px;
+  font-weight: bold;
+}
+.tpaddress{
+  grid-area:tpaddress;
+  font-size: 18px;
+  font-weight: normal;
+}
+.tpemail{
+  grid-area:tpemail;
+  font-size: 16px;
+  font-style: italic;
+}
+.tpcontact{
+  grid-area:tpcontact;
+  font-size: 16px;
+  padding-bottom: 10px;
+}
+
+.menu{
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  /* background: blue; */
+}
+
+.buttonbox{
+  display: inline-block;
+  /* height: 50px; */
+  /* place-self:center; */
+  /* margin-left: auto; */
+  /* margin-right:auto; */
+  /* position: relative; */
+  /* place-items: center; */
+  /* place-items:center; */
+  /* width: 100%; */
+  /* grid-auto-rows: minmax(max-content, 2fr); */
+  /* grid-auto-rows: 1fr; */
+  /* grid-auto-flow: column; */
+  /* grid-template-columns:auto; */
+   /* grid-template-columns:repeat(auto, minmax(0, 1fr)); */
+
+  /* margin-left: auto;
+  margin-right: auto; */
+  /* align-content: center; */
+  /* grid-row: 1fr; */
+}
+
+.del_item {
+    /* display: inline-block; */
+    /* width: 50%; */
+    /* height: 50%; */
+    /* float:right; */
+    /* min-width: 100px; */
+    /* width: 100px; */
+    /* margin:5px 5px 0 0; */
+    padding: 3px;
+    margin: 5px;
+
+    /* position: relative; */
+    top: -5px;
+    /* left:20px; */
+    /* right:20px; */
+      /* right: 0; */
+    @media only screen and (min-width: 600px) {
+      font-size: .9em;
+    }
+}
+
+.edit_item {
+    /* display: inline-block; */
+    /* float:right; */
+    padding: 3px;
+    /* margin:5px 5px 0 0; */
+    /* position: relative; */
+    top: -5px;
+    /* left:20px; */
+    @media only screen and (min-width: 600px) {
+      font-size: .9em;
+    }
+    /* right:10px; */
+    /* right: 0; */
+}
+.rotate{
+  transform: rotateZ(90deg);
+}
+
+
+/*Ending CSS for TransporterView */
+
+/* Starting CSS for Shake animation */
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.apply-shake {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    background: yellow;
+    border-color: red;
+}
+
+.apply-bake {
+    animation: shake .82s cubic-bezier(.36,.07,.19,.97) both;
+    background: blue;
+    border-color: green;
+}
+.apply-cake {
+    animation: shake .5s cubic-bezier(.36,.07,.19,.97) both;
+    border-color: black;
+    /* background: blue; */
+}
+/* Ending CSS for Shake Animation */
+
+
+
+
+/*Starting CSS for Question List*/
+@media only screen and (min-width: 600px) {
+.dashboardpage{
+  display: grid;
+  grid-template-columns: 2fr  4fr;
+
+}
+.chat-box{
+  width: 90%;
+  margin-left: 50px;
+  position: sticky;
+  top:5px;
+  height: 98vh;
+}
+
+.ques{
+  margin:2px;
+  min-height: 15px;
+  cursor: grab;
+  /* z-index: 5; */
+}
+
+.wrapper .activequestion{
+  /* content: '\2630'; */
+  /* border-width: thick; */
+  border-color: #04AA6D;
+  background-color: #04AA6D;
+  color: white;
+}
+
+
+
+.wrapper{
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: .8rem;
+  /* height: 0px; */
+  /* width:100px; */
+  /* transition: all ls ease-in 2s; */
+  /* height: 100vh; */
+}
+
+.hexagon{
+  display: none;
+}
+
+
+
+}
+
+.hexagon{
+    position: sticky;
+    text-align: center;
+    width:100%;
+    top:20px;
+    scroll-behavior: smooth;
+    bottom: 80vh;
+    margin-right: auto;
+    margin-left:auto;
+    left:0px;
+    height: 30px;
+      color: black;
+    background: green;
+      transform: rotateZ(0deg);
+    overflow:hidden;
+    z-index: 109;
+    cursor: pointer;
+    background-clip: content-box;
+
+  }
+
+.wrapper {
+  /* display: grid; */
+  /* grid-template-rows : repeat(4, auto); */
+  /* grid-gap: 0px; */
+  padding: 10px;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #fff;
+  @media only screen and (max-width: 600px){
+    height: 0;
+  }
+
+  }
+
+.ques{
+  border: 1px solid #000; /*#d64161;*/
+  cursor: pointer;
+  /* padding: 5px; */
+  margin-bottom: 10px;
+  width:98%;
+  height: auto;
+  /* border-radius: 1px; */
+  /* margin:auto; */
+  box-sizing: border-box;
+  border-width:this;
+  border-radius: 10px;
+  display:grid;
+  grid-template-areas:
+  "subject subject topic newmessage"
+  "assigned_to assigned_to resolved_flag resolved_flag"
+  "question_text question_text question_text question_text"
+  "photodiv photodiv photodiv photodiv";
+  /* grid-template-rows: 25px auto; */
+  grid-template-columns: auto auto auto 20px;
+  margin-bottom: 25px;
+  margin-top:25px;
+  text-align: justify;
+  /* grid-template-columns: auto 300px; */
+  @media only screen and (min-width: 600px) {
+    width:100%;
+    /* max-height: 800px; */
+    /* max-height: 100%; */
+  }
+}
+.photodiv{
+  grid-area: photodiv;
+  /* display: flex; */
+  justify-content: center;
+  max-height: 200px;
+  overflow: auto;
+}
+.photo{
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto
+  }
+.photo-full{
+  /* width: 100%; */
+  height: 100vh;
+  overflow: auto;
+  position:sticky;
+  z-index:300;
+  @media only screen and (max-width: 600px) {
+    /* height:100vh; */
+    /* width: auto; */
+    /* flex-basis: 0; */
+    /* flex-grow: -1; */
+
+    /* object-fit: cover; */
+    display: block;
+    max-width:100vw;
+    max-height:100vh;
+    width: auto;
+    height: auto;
+
+
+
+    /* overflow: auto; */
+    /* max-height: 800px; */
+    /* max-height: 100%; */
+  }
+
+}
+
+
+.question_text{
+  grid-area: question_text;
+  border: 1px solid #000;
+  border-width: thin;
+  /* margin:1px; */
+  border-radius: 2px;
+  background-color: #c0e8fa; /*(210, 232, 252);*/
+  /* z-index: 0; */
+  /* display: flex; */
+  /* align-items: flex-end; */
+}
+
+.subject{
+  grid-area: subject
+}
+
+.topic{
+  grid-area:topic
+}
+
+.resolved_flag{
+  grid-area:resolved_flag
+}
+.assigned_to{
+  grid-area:assigned_to
+}
+.newmessage{
+  grid-area:newmessage
+}
+
+
+
+
+/*Ending Css for questin list */
+
+/* Profile css style starts */
+.dashboard__heading button {
+	/* padding: 15px; */
+	width: 150px;
+	/* margin-right: 15px; */
+	background-color: #faf8f1;
+}
+.logout__btn:hover {
+	background-color: #faeab1;
+}
+.dashboard__main {
+	/* padding: 20px; */
+	display: flex;
+	flex-direction:column;
+	align-items: center;
+}
+.dashboard__heading {
+	display: flex;
+	/* margin-bottom: 25px; */
+	align-items: center;
+	justify-content: space-between;
+}
+.timezone__wrapper {
+	width: 100%;
+  @media screen and (min-width: 600px){
+    width: 50%
+      }
+}
+
+.saveBtn__container {
+	width: 100%;
+	/* padding: 30px; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  margin-top: 10px;
+}
+.saveBtn__container button {
+	width: 200px;
+	padding: 15px;
+	background-color: #faeab1;
+}
+.form {
+	width: 100%;
+  /* background: blue; */
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  /* height: 100px; */
+	/* margin-top: 30px; */
+}
+.select__wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-left: 25px;
+}
+select {
+	/* padding: 10px; */
+  min-width: 100px;
+	max-width: 90%;
+  width: fit-content;
+  @media screen and (min-width: 600px){
+    width: 150px;
+      }
+}
+.profile {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	/* align-items: center; */
+	/* justify-content: center; */
+}
+
+
+.bookContainer {
+	width: 95%;
+	/* min-height: 100vh; */
+	display: flex;
+	align-items: center;
+  /* justify-content: center; */
+	justify-content: space-evenly;
+	flex-direction: column;
+  margin-left: 10px;
+	/* padding: 30px; */
+}
+.booking__form {
+border-radius: 5px;
+ background-color: #f2f2f2;
+ padding: 20px;
+}
+
+.booking_form label,input[type=email],input[type=tel]textarea{
+  /* padding: 10px; */
+   width: 90vw;/*
+  flex:1;
+  /* @media only screen and (max-width: 600px){ */
+    /* width: auto; */
+    /* margin-top: 10px */
+    /* padding: 10px; */
+  /* } */
+}
+
+
+
+.booking_form input[type=text], input[type=date], select, textarea {
+  width:100%; /* Full width */
+  padding: 5px;  /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical; /* Allow the user to vertically resi0ze the textarea (not horizontally) */
+  font:inherit;
+}
+
+.booking_form input[type=date]{
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+
+.bookTitle {
+	margin-bottom: 30px;
+	color: #c58940;
+}
+.bookingBtn {
+	margin-top: 20px;
+	background-color: #c58940;
+	color: #fff;
+}
+/* Profile CSS styling ends */
+
+/* SessionCharts Property */
+.noshow{
+  display: none;
+}
+
+.event-head{
+  margin: "10px auto auto auto";
+  @media only screen and (min-width: 600px){
+   /* display: none; */
+   margin-left: 10%;
+   margin-right: 40%;
+  };
+  /* position: absolute; */
+}
+
+.event-head p{
+  padding-left: 5px;
+  margin:10px 10px 10px 10px;
+}
+
+.tab-box{
+
+  margin-left: 10%;
+  margin-right: 40%;
+  margin-top: 15px;
+  /* display: none; */
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+  width: 70%;
+  max-height: 300px;
+  overflow-y: auto;
+  }
+
+  .active-event {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .active-event:after {
+    /* content: "\2212"; */
+    content: "\2705";
+  }
+
+  .sessions{
+    /* margin-top: -5px; */
+    box-sizing: border-box;
+    /* padding-left: 2px; */
+    margin: 0px;
+    /* border-radius: 5px; */
+    height: 100%;
+    border: 1px solid #dddddd;
+    width: 100%;
+    display: grid;
+    grid-auto-flow:rows;
+  }
+  .session-detail{
+
+    display: grid;
+    grid-template-columns:.3fr .3fr 2fr .75fr;
+    grid-column-gap: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    /* grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); */
+  }
+  .dates{
+    margin-left: 0;
+    text-align: center;
+  }
+
+  .date{
+    font-size: 35px;
+  }
+
+  .month{
+    font-size: 17px;
+  }
+
+  .year{
+    font-size: 15px;
+  }
+
+  .times{
+    text-align:center;
+   /* height:450px; */
+   /* width:75%; */
+   /* border:1px solid blue; */
+  }
+  .timeslot{
+    display:inline-block;
+    padding-top: 50%;
+      /* width:15%; */
+      /* height:250px; */
+      /* margin: 0 auto; */
+      /* border: 1px solid black; */
+  }
+   .JoinLink{
+    max-width: 100%;
+    margin-right: 5px;
+  }
+
+
+
+
+@media only screen and (max-width: 600px) {
+  .tab-box {
+    margin-left: auto;
+    margin-right: auto;
+    width: min(550px,95%);
+    /* padding-left: 40px; */
+  }
+  }
+
+/* @media only screen and (max-width:780px){
+  .chat-box{
+    /* background: black; */
+    /* margin-left: auto; */
+    /* margin-right: auto; */
+    /* width:100%; */
+  /* } */
+/* } */
+
+/* SessionCharts Property */
+
+
+/* Start Property for draggables */
+:root {
+  --border-color: #e3e5e4;
+  --background-color: #c3c7ca;
+  --text-color: #34444f;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff;
+  padding-left: 5px;
+  /* display: flex; */
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.tripSandbox {
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+  padding: 0;
+  list-style-type: none;
+}
+
+.tripSandbox li {
+  background-color: #fff;
+  display: flex;
+  flex: 1;
+}
+
+.tripSandbox li:not(:last-of-type) {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.tripSandbox .number {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  height: 60px;
+  width: 60px;
+}
+
+.tripSandbox li.over .draggable {
+  background-color: #eaeaea;
+}
+
+.tripSandbox .person-name {
+  margin: 0 20px 0 0;
+}
+
+.tripSandbox li.right .person-name {
+  color: #3ae374;
+}
+
+.tripSandbox li.wrong .person-name {
+  color: #ff3838;
+}
+
+.draggable {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  flex: 1;
+  touch-action: none;
+}
+
+.check-btn {
+  background-color: var(--background-color);
+  border: none;
+  color: var(--text-color);
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.check-btn:active {
+  transform: scale(0.98);
+}
+
+.check-btn:focus {
+  outline: none;
+}
+
+.touched{
+  background: lightblue
+}
+
+.highlight{
+  min-height: 4em;
+  background: lightblue;
+}
+
+.highlight::after{
+  content:"No More items - Drag and Drop a new Item";
+  align-items: center;
+  /* color: red; */
+}
+.highlight:hover{
+  background: none;
+  border:3px solid
+}
+/* End Property for draggables */
+.singleLine{
+@media only screen and (min-width: 600px) {
+    display:flex;
+    width: 95%;
+}
+}
+
+.singleLine{
+@media only screen and (max-width: 600px) {
+  display:flex;
+  padding-left:5px;
+  column-gap: 5%;
+  /* flex-direction: column; */
+  flex-flow:column wrap;
+}
+}
