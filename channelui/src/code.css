@@ -20,7 +20,7 @@
 }
 
 .main{
-    padding-top: 100px;
+    /* padding-top: 100px; */
     padding-bottom: 50px;
     /* overflow-y: scroll; */
 }
@@ -46,3 +46,64 @@
             flex-direction: column;
             justify-content: center;
         }
+
+.bottom-center:hover {
+  background-color: #28a745; /* This is the green color from Bootstrap's 'success' theme */
+  border-color: #28a745;
+  color: #fff;
+}
+
+.bottom-center{
+    /* background-color: rgb(240,255,255,.8); */
+    backdrop-filter: blur(10);
+    position:absolute;
+     top: -15px;
+     padding: 0;
+    /* margin:auto; */
+  /* right:auto; */
+}
+
+.card{
+    transition: transform 300ms ease ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.1);
+}
+
+
+/* Social Icons */
+
+.fa {
+  /* padding: 20px; */
+  font-size: 20px;
+  /* width: 30px; */
+  /* text-align: center; */
+  text-decoration: none;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+

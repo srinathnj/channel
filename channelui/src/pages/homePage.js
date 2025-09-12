@@ -1,10 +1,8 @@
 import React, {Component} from "react";
-import HeaderItem from "../components/Header.js";
-import Menubar from "../components/Menubar.js";
 import {withRouter} from "../commons/with-router.js";
 
 
-class Home_Page extends Component {
+class HomePage extends Component {
   constructor(props){
     super(props);
     // this.function = this.function.bind(this)
@@ -25,8 +23,7 @@ class Home_Page extends Component {
 
     return(
       <div className="main">
-      <Menubar/>
-      <div className="container border">
+      <div className="container border  mb-3">
      <div class="container py-1">
     <h3 class="fw-bold text-center mb-2">Follow the 4 Simple steps to fix your device</h3>
     
@@ -35,7 +32,7 @@ class Home_Page extends Component {
             <div class="card shadow-sm border-primary step-card text-center h-100">
                 <div class="card-body">
                     <p class="service-steps mb-0">
-                        <span class="service-number text-primary fw-bold">1</span> Choose a Mobile or Laptop
+                        <span class="service-number text-primary fw-bold">1</span> Choose Mobile or Laptop
                     </p>
                 </div>
             </div>
@@ -72,7 +69,7 @@ class Home_Page extends Component {
         </div>
     </div>
 </div>
-      <div class="row mt-sm-5">
+      <div class="row mt-3">
         <div class="col-12 text-center">
             <p class="fs-4 d-none d-sm-inline text-success fw-bold">
                 That's it! We will get in touch with you to make your device work like brand new again!!
@@ -91,26 +88,19 @@ class Home_Page extends Component {
 
       </div>
 
-
+                       <div className="mb-5"> <span class="service-number text-primary fw-bold">Step 1</span> Choose Mobile or Laptop
+                       </div>
      <div class="row g-1 g-sm-4 mt-sm-5 mx-2 justify-content-center align-items-stretch">
-        <div class="col-6 col-sm-6 col-lg-3">
-          <div class="ratio ratio-1x1">
-            <div class="card shadow-sm border-primary device-card text-center">
-                <div class="card-body">
-                    <p class="service-steps mb-0">
-                        Laptop
-                    </p>
-                </div>
+        <div class="col-6 col-sm-6 col-lg-2">
+            <div class="card shadow-sm border-primary card-card text-center h-100 object-fit " onClick={()=>{this.props.router.navigate("/services/computers")}}>
+                    <img type="button" src="media/laptop_pc.jpeg"  className="w-full h-full object-contain" alt="Select this to repair your mobile" />
+                   <div type="btn" class="btn btn-danger align-self-center bottom-center fw-bold fs-8">Computers</div>
             </div>
         </div>
-        </div>
-        <div class="col-6 col-sm-6 col-lg-3">
-            <div class="card shadow-sm border-primary device-card text-center">
-                <div class="card-body">
-                    <p class="service-steps mb-0">
-                        Mobile
-                    </p>
-                </div>
+        <div class="col-6 col-sm-6 col-lg-2 ">
+            <div class="card shadow-sm border-primary device-card text-center h-100 object-fit" onClick={()=>{this.props.router.navigate("/services/mobiles")}}>
+                   <img type="button" src="media/mobile.png"  className="w-full h-full object-contain" alt="Select this to repair your computer"/>
+                   <div type="btn" class="btn btn-danger align-self-center bottom-center fw-bold fs-8">Mobiles</div>
             </div>
         </div>
 
@@ -132,4 +122,4 @@ class Home_Page extends Component {
 
 }
 
-export default Home_Page = withRouter(Home_Page);
+export default HomePage = withRouter(HomePage);
