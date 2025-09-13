@@ -35,10 +35,10 @@ function App(props) {
     <Route path = "/home/" element={<HomePage/>}/>
     {/* <Route path = "/services/:ordertype" element={<ServicePage/>}/> */}
     <Route path = "/services/" element={<ServicePage/>}/>
-    <Route path = "/services/:orderref" element={<ServicePage/>}/>
-    <Route path = "/status/" element={<Status_Page/>}/>
-    <Route path = "/status/:orderref" element={<Status_Page/>}/>
-    <Route path = "/techhome/" element={<Tech_Home/>}/>
+    <Route path = "/services/:deviceType" element={<ServicePage/>}/>
+    {/* <Route path = "/status/" element={<Status_Page/>}/> */}
+    {/* <Route path = "/status/:orderref" element={<Status_Page/>}/> */}
+    {/* <Route path = "/techhome/" element={<Tech_Home/>}/> */}
     </Routes>
     </BrowserRouter>
   );

@@ -32,7 +32,7 @@ class HomePage extends Component {
             <div class="card shadow-sm border-primary step-card text-center h-100">
                 <div class="card-body">
                     <p class="service-steps mb-0">
-                        <span class="service-number text-primary fw-bold">1</span> Choose Mobile or Laptop
+                        <span class="service-number text-primary fw-bold">1</span> Choose Mobile, Computer or Laptop
                     </p>
                 </div>
             </div>
@@ -88,19 +88,27 @@ class HomePage extends Component {
 
       </div>
 
-                       <div className="mb-5"> <span class="service-number text-primary fw-bold">Step 1</span> Choose Mobile or Laptop
+                       <div className="mb-5"> <span class="service-number text-primary fw-bold">Step 1</span> Choose your device
                        </div>
      <div class="row g-1 g-sm-4 mt-sm-5 mx-2 justify-content-center align-items-stretch">
-        <div class="col-6 col-sm-6 col-lg-2">
-            <div class="card shadow-sm border-primary card-card text-center h-100 object-fit " onClick={()=>{this.props.router.navigate("/services/computers")}}>
+        <div class="col-6 col-sm-6 col-lg-2 mb-2">
+            <div class="card shadow-sm border-primary card-card text-center h-100 object-fit " onClick={()=>{this.props.router.navigate("/services/laptop")}}>
                     <img type="button" src="media/laptop_pc.jpeg"  className="w-full h-full object-contain" alt="Select this to repair your mobile" />
-                   <div type="btn" class="btn btn-danger align-self-center bottom-center fw-bold fs-8">Computers</div>
+                   <div type="btn" class="btn btn-danger align-self-center bottom-center fw-bold fs-8">Laptops</div>
             </div>
         </div>
-        <div class="col-6 col-sm-6 col-lg-2 ">
-            <div class="card shadow-sm border-primary device-card text-center h-100 object-fit" onClick={()=>{this.props.router.navigate("/services/mobiles")}}>
+
+        <div class="col-6 col-sm-6 col-lg-2 mb-2">
+            <div class="card shadow-sm border-primary device-card text-center h-100 object-fit" onClick={()=>{this.props.router.navigate("/services/mobile")}}>
                    <img type="button" src="media/mobile.png"  className="w-full h-full object-contain" alt="Select this to repair your computer"/>
                    <div type="btn" class="btn btn-danger align-self-center bottom-center fw-bold fs-8">Mobiles</div>
+            </div>
+        </div>
+
+        <div class="col-6 col-sm-6 col-lg-2 mb-2">
+            <div class="card shadow-sm border-primary card-card text-center h-100 object-fit " onClick={()=>{this.props.router.navigate("/services/desktop-computer")}}>
+                    <img type="button" src="media/laptop_pc.jpeg"  className="w-full h-full object-contain" alt="Select this to repair your mobile" />
+                   <div type="btn" class="btn btn-danger align-self-center bottom-center fw-bold fs-8">Desktop Computers</div>
             </div>
         </div>
 
