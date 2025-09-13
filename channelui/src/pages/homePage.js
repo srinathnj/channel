@@ -42,7 +42,7 @@ class HomePage extends Component {
             <div class="card shadow-sm border-success step-card text-center h-100">
                 <div class="card-body">
                     <p class="service-steps mb-0">
-                        <span class="service-number text-success fw-bold">2</span> Let us know how we can reach you
+                        <span class="service-number text-success fw-bold">2</span> Write or Voice Message your issue
                     </p>
                 </div>
             </div>
@@ -52,7 +52,7 @@ class HomePage extends Component {
             <div class="card shadow-sm border-info step-card text-center h-100">
                 <div class="card-body">
                     <p class="service-steps mb-0">
-                        <span class="service-number text-info fw-bold">3</span> Write or Voice Message your issue
+                        <span class="service-number text-info fw-bold">3</span> Let us know how we can reach you
                     </p>
                 </div>
             </div>
@@ -74,9 +74,10 @@ class HomePage extends Component {
             <p class="fs-4 d-none d-sm-inline text-success fw-bold">
                 That's it! We will get in touch with you to make your device work like brand new again!!
             </p>
-            <p class="fs-5 d-none d-sm-inline text-secondary">
+            <div><p class="fs-5 d-none d-sm-inline text-secondary">
                 Sit back, relax, watch through the live updates of the repair! Any questions, we are just a message away!
             </p>
+            </div>
              <p class="fs-5  d-sm-none text-success fw-bold">
                 That's it! We will get in touch with you to make your device work like brand new again!!
             </p>

@@ -1,4 +1,4 @@
-import React, {Component,useState} from "react";
+import React, {Component} from "react";
 import {withRouter} from "../commons/with-router.js";
 import { deviceOptions,laptopOptions,mobileOptions ,compOptions} from "../commons/config.js";
 import Modal from "../components/modal.js"
@@ -7,6 +7,7 @@ class ServicePage extends Component {
   constructor(props){
     super(props);
     // this.function = this.function.bind(this)
+    this.submitButtonRef = React.createRef()
     this.handleChange = this.handleChange.bind(this);
     this.mOpen = this.mOpen.bind(this);
     this.mClose = this.mClose.bind(this);
@@ -31,11 +32,15 @@ class ServicePage extends Component {
     // const screamingCasedValue = value.toUpperCase().replace(/\s/g, '_');
     // const capitalizedValue = value.charAt(0).toUpperCase() + value.slice(1)
     this.setState({
-    // ...state,
-    [name]: value
-    });
-
-  };
+      // ...state,
+      [name]: value
+    },()=>{
+    if(name==='deviceType') this.setState({brand:""})
+    if(name==='deliveryOption' && this.submitButtonRef.current) {
+          this.submitButtonRef.current.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+  }
+  )};
 
   mOpen(){
     this.setState({isMopen:true});
@@ -48,7 +53,12 @@ class ServicePage extends Component {
   componentDidMount(){
     //UserManagement logic if requried based on Auth Service package
     console.log(this.props.router.params.deviceType)
+    
+   
   }
+
+  
+
 
   
 
@@ -103,7 +113,7 @@ class ServicePage extends Component {
           
                 
                      mobileOptions.map((option)=>(
-                    <option key={option.id} disabled={option.dflag} selected={(this.state.brand===option.id)?true:null} value={option.id}>
+                    <option key={option.id} disabled={option.dflag} hidden={option.hflag} selected={(this.state.brand===option.id)?true:null} value={option.id}>
                 {option.label}
               </option>
                     ))
@@ -130,7 +140,7 @@ class ServicePage extends Component {
 
       <div class="row">
       <div class="col-md-12 mb-3">
-        <label for="voice-message" class="form-label">Voice Message</label> <a type="button" class="btn btn-primary"> Voice Message</a>
+        <label for="voice-message" class="form-label">Voice Message</label> <div type="button" class="btn btn-primary"> Voice Message</div>
         <textarea class="form-control" id="voice-message" name="message" rows="2" value={this.state.message} onChange={this.handleChange} placeholder="Let us know your issue or Leave a brief voice message summary"></textarea>
       </div>
       </div>
@@ -141,24 +151,24 @@ class ServicePage extends Component {
         <input type="text" class="form-control" name="cname" id="cname" value={this.state.cname} onChange={this.handleChange} placeholder="Your Name" required/>
       </div>
 
-    <div class="col-6 col-md-4 mb-3">
+    <div class="col-12 col-md-4 mb-3">
         <label for="phone" class="form-label">Phone</label>
         <input type="tel" class="form-control" name="phone" id="phone" value={this.state.phone} onChange={this.handleChange} placeholder="Your Phone Number" required/>
       </div>
     
-      <div class="col-6 col-md-4 mb-3">
+      <div class="col-12 col-md-4 mb-3">
         <label for="email" class="form-label">Email address</label>
         <input type="email" class="form-control" name="email" id="email" value={this.state.email} onChange={this.handleChange} placeholder="name@example.com" required/>
       </div>
      </div>
 
      {/* delivery section */}
-     <div className="mt-5">
+     <div className="mt-2 bg-warning">
             <label className="form-label text-dark mb-2">
               How would you like to deliver your device?
             </label>
             <div className="d-flex align-items-center flex-wrap">
-              <div className="orm-check me-4">
+              <div className="form-check me-4">
                 <input
                   type="radio"
                   id="shop-delivery"
@@ -167,8 +177,8 @@ class ServicePage extends Component {
                   checked={this.state.deliveryOption === 'shop'}
                   onChange={this.handleChange}
                   className="form-check-input"
-                />
-                <label htmlFor="shop-delivery" className="ml-2 block text-sm text-gray-700">
+                 />
+                <label htmlFor="shop-delivery" className="form-check-label text-dark">
                   I will bring device to shop
                 </label>
               </div>
@@ -194,7 +204,10 @@ class ServicePage extends Component {
               <div className="mt-4 p-4 bg-info bg-opacity-10 border border-info rounded-3">
               <p className="text-info fw-bold">Shop Address:</p>
               <p className="text-dark small mt-1">
-                Please bring your device to: 123 Main Street, Anytown, USA 12345
+                Please bring your device to: 
+                <div className="text-info-dark fw-bold">
+                17 Natesan Street, Old Pallavaram, Chennai - 600 117
+                </div>
               </p>
             </div>
           )}
@@ -232,11 +245,10 @@ class ServicePage extends Component {
 
 {/* delivery section */}
 
+   
 
-    
-
-     <div class="col-12 text-center">
-        <button type="button" className="btn btn-primary btn-30" onClick={()=>{this.mOpen()}}>Submit Request</button>
+     <div id="submitRequest" class="col-12 text-center mt-2">
+        <button ref={this.submitButtonRef}  type="button" className="btn btn-primary minh50" onClick={()=>{this.mOpen()}}>Submit Request</button>
     </div>
 
 
