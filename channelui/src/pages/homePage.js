@@ -93,21 +93,21 @@ class HomePage extends Component {
                        </div>
      <div class="row g-1 g-sm-4 mt-sm-5 mx-2 justify-content-center align-items-stretch">
         <div class="col-6 col-sm-6 col-lg-2 mb-2">
-            <div class="card shadow-sm border-primary card-card text-center h-100 object-fit " onClick={()=>{this.props.router.navigate("/services/laptop")}}>
+            <div class="card shadow-sm border-primary card-card text-center h-100 object-fit " onClick={()=>{this.props.router.navigate("/srform/laptop")}}>
                     <img type="button" src="media/laptop_pc.jpeg"  className="w-full h-full object-contain" alt="Select this to repair your mobile" />
                    <div type="btn" class="btn btn-danger align-self-center bottom-center fw-bold fs-8">Laptops</div>
             </div>
         </div>
 
         <div class="col-6 col-sm-6 col-lg-2 mb-2">
-            <div class="card shadow-sm border-primary device-card text-center h-100 object-fit" onClick={()=>{this.props.router.navigate("/services/mobile")}}>
+            <div class="card shadow-sm border-primary device-card text-center h-100 object-fit" onClick={()=>{this.props.router.navigate("/srform/mobile")}}>
                    <img type="button" src="media/mobile.png"  className="w-full h-full object-contain" alt="Select this to repair your computer"/>
                    <div type="btn" class="btn btn-danger align-self-center bottom-center fw-bold fs-8">Mobiles</div>
             </div>
         </div>
 
         <div class="col-6 col-sm-6 col-lg-2 mb-2">
-            <div class="card shadow-sm border-primary card-card text-center h-100 object-fit " onClick={()=>{this.props.router.navigate("/services/desktop-computer")}}>
+            <div class="card shadow-sm border-primary card-card text-center h-100 object-fit " onClick={()=>{this.props.router.navigate("/srform/desktop-computer")}}>
                     <img type="button" src="media/laptop_pc.jpeg"  className="w-full h-full object-contain" alt="Select this to repair your mobile" />
                    <div type="btn" class="btn btn-danger align-self-center bottom-center fw-bold fs-8">Desktop Computers</div>
             </div>

@@ -20,6 +20,9 @@ if (isset($_POST['signup'])) {
    $formattedTimestamp = $dateTime->format('Y-m-d H:i:s');
 
     $query = "INSERT INTO users (username, password, email, firstname,lastname, phone,city,zip,registered) VALUES (:username, :password, :email, :firstname,:lastname, :phone,:city,:zip,:registered)";
+   
+    // echo "Statement is: " . getcwd() . "vqeueryis" . $query;
+
     $stmt = $conn->prepare($query);
     $stmt->bindValue(':username', $username);
     $stmt->bindValue(':password',$password);
@@ -85,7 +88,7 @@ if (isset($_POST['login'])) {
               setcookie('rememberMe', $dbUsername, time()+60*60*24*7);
             }
             // var_dump($_COOKIE['rememberMe']);
-            header("Location: /ui/status/");
+            header("Location: /profile");
             exit();
         } else {
             echo "Incorrect password.";

@@ -8,7 +8,7 @@ export     const  deviceOptions = [
 
 export const laptopOptions = [
 {id:"",label:"Select a Value",dflag:true,hflag:true},
-{id:"none",label:"-------Popular Brands-------",dflag:true}, 
+{id:"popbrand",label:"-------Popular Brands-------",dflag:true}, 
 {id:"Acer",label:"Acer"}, 
 {id:"Apple",label:"Apple"}, 
 {id:"Asus",label:"Asus"}, 
@@ -22,7 +22,7 @@ export const laptopOptions = [
 {id:"MSI",label:"MSI"}, 
 {id:"Sony",label:"Sony"}, 
 {id:"Vaio",label:"Vaio"}, 
-{id:"none",label:"-------Other Brands-------",dflag:true}, 
+{id:"othrbrand",label:"-------Other Brands-------",dflag:true}, 
 {id:"24MC",label:"24MC"}, 
 {id:"AGB",label:"AGB"}, 
 {id:"Alienware",label:"Alienware"}, 
@@ -65,7 +65,7 @@ export const laptopOptions = [
 
 export const mobileOptions = [
  {id:"",label:"Select a Value",dflag:true,hflag:true},
- {id:"none",label:"-------Popular Brands-------",dflag:true}, 
+ {id:"popmobile",label:"-------Popular Brands-------",dflag:true}, 
  {id:"Apple",label:"Apple"}, 
  {id:"Asus",label:"Asus"}, 
  {id:"Google",label:"Google"}, 
@@ -84,7 +84,7 @@ export const mobileOptions = [
  {id:"Samsung",label:"Samsung"}, 
  {id:"Vivo",label:"Vivo"}, 
  {id:"Xiaomi",label:"Xiaomi"}, 
- {id:"none",label:"-------Other Brands-------",dflag:true}, 
+ {id:"othmobile",label:"-------Other Brands-------",dflag:true}, 
  {id:"AI_Plus",label:"AI_Plus"}, 
  {id:"Alcatel",label:"Alcatel"}, 
  {id:"Black_Shark",label:"Black_Shark"}, 

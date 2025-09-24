@@ -9,6 +9,7 @@ services:
     container_name: php83_app # Name our container
     volumes:
       - ./src:/var/www   # Mount our source code
+      - ./src/docker/php:/usr/local/etc/php
     networks:
       - app-network          # Connect to our network
     environment:

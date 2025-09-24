@@ -34,8 +34,9 @@ function App(props) {
     <Route path = "/" element={<HomePage/>}/>
     <Route path = "/home/" element={<HomePage/>}/>
     {/* <Route path = "/services/:ordertype" element={<ServicePage/>}/> */}
-    <Route path = "/services/" element={<ServicePage/>}/>
-    <Route path = "/services/:deviceType" element={<ServicePage/>}/>
+    <Route path = "/srform/" element={<ServicePage/>}/>
+    <Route path = "/srform/:deviceType" element={<ServicePage/>}/>
+    <Route path = "/services/:srId"  element={<ServicePage updflag={1}/>}/>
     {/* <Route path = "/status/" element={<Status_Page/>}/> */}
     {/* <Route path = "/status/:orderref" element={<Status_Page/>}/> */}
     {/* <Route path = "/techhome/" element={<Tech_Home/>}/> */}

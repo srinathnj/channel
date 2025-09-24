@@ -43,6 +43,7 @@ COPY --from=composer:latest /usr/bin/composer /usr/bin/composer
 
 # Add our PHP config
 COPY ./docker/php/php.ini /usr/local/etc/php/conf.d/custom.ini
+# COPY ./docker/php/php.ini /usr/local/etc/php/php.ini
 
 # Set working directory
 WORKDIR /var/www

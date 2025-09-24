@@ -1,6 +1,6 @@
 <?php
 $conn = null;
-$servername = "server-channel_db_1";
+$servername = "server-channel-db-1";
 $username = "master";
 $password = "rooter";
 $dbname = "channeldb";
